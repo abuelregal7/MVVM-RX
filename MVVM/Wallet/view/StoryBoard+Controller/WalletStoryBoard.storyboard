@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z8I-09-ZF2">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet-->
+        <scene sceneID="8IU-Dx-H2Q">
+            <objects>
+                <viewController storyboardIdentifier="WalletViewController" id="hoE-C6-mwJ" customClass="WalletViewController" customModule="MVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ggO-iD-gRt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FA-b5-i1y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Data Found..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFJ-xW-wJQ">
+                                        <rect key="frame" x="111.5" y="433" width="191" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="LFJ-xW-wJQ" firstAttribute="centerX" secondItem="7FA-b5-i1y" secondAttribute="centerX" id="ije-XK-HxH"/>
+                                    <constraint firstItem="LFJ-xW-wJQ" firstAttribute="centerY" secondItem="7FA-b5-i1y" secondAttribute="centerY" id="zxW-ez-HE5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FsV-DM-xNW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tRW-3h-WRj">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="WalletTableViewCell" rowHeight="229" id="g4Z-bu-eEf" customClass="WalletTableViewCell" customModule="MVVM" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="229"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g4Z-bu-eEf" id="bVP-5v-3hG">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="229"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="tRW-3h-WRj" firstAttribute="leading" secondItem="FsV-DM-xNW" secondAttribute="leading" id="2FA-ze-Ozy"/>
+                                    <constraint firstItem="tRW-3h-WRj" firstAttribute="top" secondItem="FsV-DM-xNW" secondAttribute="top" id="3LV-CR-xGJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="tRW-3h-WRj" secondAttribute="bottom" id="8Gc-nH-bT0"/>
+                                    <constraint firstAttribute="trailing" secondItem="tRW-3h-WRj" secondAttribute="trailing" id="gAL-HY-Ao2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ddR-xS-aIP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7FA-b5-i1y" secondAttribute="bottom" id="4ip-Vp-3kM"/>
+                            <constraint firstItem="7FA-b5-i1y" firstAttribute="top" secondItem="ggO-iD-gRt" secondAttribute="top" id="DtZ-OM-jkm"/>
+                            <constraint firstItem="7FA-b5-i1y" firstAttribute="leading" secondItem="ddR-xS-aIP" secondAttribute="leading" id="Hem-xM-7gF"/>
+                            <constraint firstItem="FsV-DM-xNW" firstAttribute="top" secondItem="7FA-b5-i1y" secondAttribute="top" id="IfA-Bq-GtI"/>
+                            <constraint firstItem="ddR-xS-aIP" firstAttribute="trailing" secondItem="7FA-b5-i1y" secondAttribute="trailing" id="Sft-xs-GtT"/>
+                            <constraint firstItem="FsV-DM-xNW" firstAttribute="leading" secondItem="7FA-b5-i1y" secondAttribute="leading" id="g8e-F5-hEO"/>
+                            <constraint firstItem="FsV-DM-xNW" firstAttribute="bottom" secondItem="7FA-b5-i1y" secondAttribute="bottom" id="l6g-TI-z3k"/>
+                            <constraint firstItem="FsV-DM-xNW" firstAttribute="trailing" secondItem="7FA-b5-i1y" secondAttribute="trailing" id="zBo-cf-8se"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wallet" id="GB1-vP-nDg">
+                        <barButtonItem key="leftBarButtonItem" title="back" id="M8C-LU-fla"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="backButtonOutlet" destination="M8C-LU-fla" id="0Tz-cO-yVR"/>
+                        <outlet property="walletContainerView" destination="FsV-DM-xNW" id="lMZ-Cb-ejZ"/>
+                        <outlet property="walletTableView" destination="tRW-3h-WRj" id="x2H-l5-JjG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R83-iq-TQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152.17391304347828" y="-54.910714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2NG-ur-uJJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Z8I-09-ZF2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cnN-QA-I0g">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hoE-C6-mwJ" kind="relationship" relationship="rootViewController" id="bwA-wL-zHG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AqW-Nr-fa8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-757.97101449275374" y="-54.910714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
