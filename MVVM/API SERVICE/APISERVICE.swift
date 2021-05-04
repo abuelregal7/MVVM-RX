@@ -229,6 +229,9 @@ class ApiServices {
                 }else if statusCode == 208 {
                     // ADD custom error base on status code 100
                     completion(.failure(.alreadyReported))
+                }else if statusCode == 209 {
+                    // ADD custom error base on status code 209
+                    completion(.failure(.notAuthenticated))
                 }else if statusCode == 226 {
                     // ADD custom error base on status code 100
                     completion(.failure(.IMUsed))
@@ -392,22 +395,7 @@ class ApiServices {
                     // ADD custom error base on status code 100
                     completion(.failure(.networkAuthenticationRequired))
                 }
-                else if statusCode == 209 {
-                    // ADD custom error base on status code 209
-                    completion(.failure(.notAuthenticated))
-                }else if statusCode == 403 {
-                    // ADD custom error base on status code 403
-                    completion(.failure(.forbidden))
-                }else if statusCode == 404 {
-                    // ADD custom error base on status code 404
-                    completion(.failure(.notFound))
-                }else if statusCode == 409 {
-                    // ADD custom error base on status code 409
-                    completion(.failure(.serverError))
-                }else if statusCode == 500 {
-                    // ADD custom error base on status code 500
-                    completion(.failure(.unknownError))
-                }else{
+                else{
                     completion(.failure(.unknownError))
                 }
                 //NSError()
