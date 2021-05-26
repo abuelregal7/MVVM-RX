@@ -176,7 +176,7 @@ class ApiServices {
                     guard let theJsonResponse =  try? response.result.get() else {
 
                         // ADD Custom Error
-                        completion(.failure(NetworkError((self.dataResponse?.response!.statusCode)!)))
+                        completion(.failure(.invalidResponse))
                         return
                     }
 

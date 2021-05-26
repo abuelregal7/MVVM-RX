@@ -16,10 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailTFOutlet: UITextField!
     @IBOutlet weak var passwordTFOutlet: UITextField!
     @IBOutlet weak var loginButtonOutlet: UIButton!
+    @IBOutlet weak var backButtonOutlet: UIButton!
     
     //instance of viewModel
     let loginViewModel = LoginViewModel()
-    
+    var error = ""
     //disposeBag
     let disposeBag = DisposeBag()
     
@@ -29,66 +30,31 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         loginButtonOutlet.layer.cornerRadius = 10
         
+        callBingingAndSubscribing()
+    }
+    //MARK:- CallBinging And Subscribing
+    func callBingingAndSubscribing() {
+        sbuscribeToEmailTFAndPasswordTF()
         bindTextFieldsToViewModel()
         subscribeToLoading()
         subscribeToResponse()
-        subscribeIsLoginEnabled()
+        subscribeToAlert()
+        //subscribeIsLoginEnabled()
         subscribeToLoginButton()
+        subscribeToBackButton()
+        //emailTFOutlet.text = "momo@a.com"
     }
-    //MARK:- BindTextFieldsToViewModel
-    func bindTextFieldsToViewModel() {
-        emailTFOutlet.rx.text.orEmpty.bind(to: loginViewModel.emailBehavior).disposed(by: disposeBag)
-        passwordTFOutlet.rx.text.orEmpty.bind(to: loginViewModel.passwordBehavior).disposed(by: disposeBag)
-    }
-    
-    //MARK:- SubscribeToLoading
-    func subscribeToLoading() {
-        loginViewModel.loadingBehavior.subscribe(onNext: { (isLoading) in
-            if isLoading {
-                self.showIndicator(withTitle: "", and: "")
-            } else {
-                self.hideIndicator()
-            }
-        }).disposed(by: disposeBag)
-    }
-    
-    //MARK:- SubscribeToResponse
-    func subscribeToResponse() {
-        loginViewModel.loginModelObservable.subscribe(onNext: {
-            if $0.result == true {
-                if let walletVC = UIStoryboard(name: "WalletStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "WalletViewController") as? WalletViewController {
-                    let navController = UINavigationController(rootViewController: walletVC)
-                    navController.isNavigationBarHidden = false
-                    navController.modalPresentationStyle = .fullScreen
-                    self.present(navController, animated: true, completion: nil)
-                    
-                }
-            }else{
-                let alert = UIAlertController(title: "Error", message: "Something went wrong", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
-        }).disposed(by: disposeBag)
-    }
-    
-    //MARK:- SubscribeIsLoginEnabled
-    func subscribeIsLoginEnabled() {
-        loginViewModel.isLoginButtonEnabled.bind(to: loginButtonOutlet.rx.isEnabled).disposed(by: disposeBag)
-    }
-    
-    //MARK:- SubscribeToLoginButton
-    func subscribeToLoginButton() {
-        loginButtonOutlet
+    //MARK:- Back Button
+    func subscribeToBackButton() {
+        backButtonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
+            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
                 print("buttonTapped")
-                self.loginViewModel.fetchData()
-        }).disposed(by: disposeBag)
-
+                self.dismiss(animated: true, completion: nil)
+            }).disposed(by: disposeBag)
     }
     
 }
-

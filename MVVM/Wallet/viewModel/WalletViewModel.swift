@@ -9,25 +9,29 @@ import Foundation
 import RxCocoa
 import RxSwift
 
+//MARK:- WalletViewModel
 class WalletViewModel {
     
-    var loadingBehavior = BehaviorRelay<Bool>(value: false)
-    private var isTableHidden   = BehaviorRelay<Bool>(value: false)
+    // BehaviorRelay and publishSubject proberties
+    var loadingBehavior              = BehaviorRelay<Bool>(value: false)
+    private var isTableHidden        = BehaviorRelay<Bool>(value: false)
     
-    private var walletModelSubject = PublishSubject<[WalletData]>()
-    private var walletModelSubject2 = PublishSubject<WalletModel>()
+    private var walletModelSubjectData   = PublishSubject<[WalletData]>()
+    private var walletModelSubjectModel  = PublishSubject<WalletModel>()
     
+    //MARK:- walletModelObservable
     var walletModelObservable: Observable<[WalletData]> {
-        return walletModelSubject
+        return walletModelSubjectData
     }
+    //MARK:- walletModelObservable2
     var walletModelObservable2: Observable<WalletModel> {
-        return walletModelSubject2
+        return walletModelSubjectModel
     }
-    
+    //MARK:- isTableHiddenObservable
     var isTableHiddenObservable: Observable<Bool> {
         return isTableHidden.asObservable()
     }
-    
+    //MARK:- Get Wallets request
     func getWallets() {
         
         loadingBehavior.accept(true)
@@ -46,7 +50,7 @@ class WalletViewModel {
                 print(wallets)
                 
                 if !wallets.isEmpty {
-                    self.walletModelSubject.onNext(data.data ?? [])
+                    self.walletModelSubjectData.onNext(data.data ?? [])
                     self.isTableHidden.accept(false)
                 }else{
                     self.isTableHidden.accept(true)
@@ -61,3 +65,4 @@ class WalletViewModel {
         }
     }
 }
+//MARK:- End Of Class

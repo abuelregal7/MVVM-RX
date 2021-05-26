@@ -10,9 +10,19 @@
 		4E207773700FABFAA7D19013 /* Pods_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7CC76BC7872CAFB6F7863E6 /* Pods_MVVM.framework */; };
 		8D5862CD211C9B1AEAF50540 /* Pods_MVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B6268CAEE37D34CABFDFC3 /* Pods_MVVMTests.framework */; };
 		C72B6A576FB80B1C7CD2325C /* Pods_MVVM_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3C3C8B4370595E7CC60093 /* Pods_MVVM_MVVMUITests.framework */; };
+		E23C548E265A7B5700D64938 /* BindingAndSubscribingLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23C548D265A7B5700D64938 /* BindingAndSubscribingLogin.swift */; };
+		E23CA9DE265BB2FE0074FEBA /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23CA9DD265BB2FE0074FEBA /* SplashVC.swift */; };
+		E23CA9E9265BEC490074FEBA /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E23CA9E8265BEC490074FEBA /* Profile.storyboard */; };
+		E23CA9EE265BEC5C0074FEBA /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23CA9ED265BEC5C0074FEBA /* ProfileVC.swift */; };
 		E242CDD426414888009312D7 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242CDD326414888009312D7 /* FavoriteViewModel.swift */; };
 		E242CDE626414CCB009312D7 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242CDE526414CCB009312D7 /* NetworkError.swift */; };
 		E242CDF0264152C9009312D7 /* WalletAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242CDEF264152C9009312D7 /* WalletAPI.swift */; };
+		E245C3EA265CFA42004BCA41 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245C3E9265CFA42004BCA41 /* ProfileViewModel.swift */; };
+		E245C3EF265CFA4F004BCA41 /* ProfileAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245C3EE265CFA4F004BCA41 /* ProfileAPI.swift */; };
+		E245C3F4265CFA66004BCA41 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245C3F3265CFA66004BCA41 /* ProfileModel.swift */; };
+		E245C418265D1E39004BCA41 /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245C417265D1E39004BCA41 /* PickerModel.swift */; };
+		E245C42E265D39D8004BCA41 /* BindingAndSubscribingwallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245C42D265D39D8004BCA41 /* BindingAndSubscribingwallet.swift */; };
+		E245C436265D3A71004BCA41 /* BindingAndSubscribingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245C435265D3A71004BCA41 /* BindingAndSubscribingProfile.swift */; };
 		E2476CC6263EB077006A847C /* WalletLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2476CC5263EB077006A847C /* WalletLinks.swift */; };
 		E2476CCB263EB092006A847C /* WalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2476CCA263EB092006A847C /* WalletData.swift */; };
 		E2476CD0263EB0B5006A847C /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2476CCF263EB0B5006A847C /* WalletModel.swift */; };
@@ -36,6 +46,7 @@
 		E24DF3BA263D72FB00E50834 /* LoginFailureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DF3B9263D72FB00E50834 /* LoginFailureModel.swift */; };
 		E24DF3BF263D732A00E50834 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DF3BE263D732A00E50834 /* User.swift */; };
 		E24DF3D3263D832600E50834 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DF3D2263D832600E50834 /* EX.swift */; };
+		E25D452926565ABA0017F98E /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D452826565ABA0017F98E /* LoginAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,9 +76,19 @@
 		81B6268CAEE37D34CABFDFC3 /* Pods_MVVMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7CC76BC7872CAFB6F7863E6 /* Pods_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82C9A4CE3EFB5FC9A0C14C6 /* Pods-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-MVVM/Pods-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		E23C548D265A7B5700D64938 /* BindingAndSubscribingLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingAndSubscribingLogin.swift; sourceTree = "<group>"; };
+		E23CA9DD265BB2FE0074FEBA /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		E23CA9E8265BEC490074FEBA /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		E23CA9ED265BEC5C0074FEBA /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E242CDD326414888009312D7 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		E242CDE526414CCB009312D7 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E242CDEF264152C9009312D7 /* WalletAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAPI.swift; sourceTree = "<group>"; };
+		E245C3E9265CFA42004BCA41 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		E245C3EE265CFA4F004BCA41 /* ProfileAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAPI.swift; sourceTree = "<group>"; };
+		E245C3F3265CFA66004BCA41 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		E245C417265D1E39004BCA41 /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
+		E245C42D265D39D8004BCA41 /* BindingAndSubscribingwallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingAndSubscribingwallet.swift; sourceTree = "<group>"; };
+		E245C435265D3A71004BCA41 /* BindingAndSubscribingProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingAndSubscribingProfile.swift; sourceTree = "<group>"; };
 		E2476CC5263EB077006A847C /* WalletLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletLinks.swift; sourceTree = "<group>"; };
 		E2476CCA263EB092006A847C /* WalletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletData.swift; sourceTree = "<group>"; };
 		E2476CCF263EB0B5006A847C /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
@@ -97,6 +118,7 @@
 		E24DF3B9263D72FB00E50834 /* LoginFailureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFailureModel.swift; sourceTree = "<group>"; };
 		E24DF3BE263D732A00E50834 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E24DF3D2263D832600E50834 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
+		E25D452826565ABA0017F98E /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +172,60 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E23CA9DC265BB2DD0074FEBA /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				E23CA9DD265BB2FE0074FEBA /* SplashVC.swift */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		E23CA9E2265BEBDB0074FEBA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E23CA9E3265BEBF80074FEBA /* viewModel */,
+				E23CA9E4265BEC090074FEBA /* view */,
+				E23CA9E5265BEC110074FEBA /* model */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E23CA9E3265BEBF80074FEBA /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E245C3E9265CFA42004BCA41 /* ProfileViewModel.swift */,
+				E245C3EE265CFA4F004BCA41 /* ProfileAPI.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		E23CA9E4265BEC090074FEBA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E23CA9E7265BEC2B0074FEBA /* StoryBoard+Controller */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E23CA9E5265BEC110074FEBA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E245C3F3265CFA66004BCA41 /* ProfileModel.swift */,
+				E245C416265D1E27004BCA41 /* Picker */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E23CA9E7265BEC2B0074FEBA /* StoryBoard+Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E23CA9ED265BEC5C0074FEBA /* ProfileVC.swift */,
+				E245C435265D3A71004BCA41 /* BindingAndSubscribingProfile.swift */,
+				E23CA9E8265BEC490074FEBA /* Profile.storyboard */,
+			);
+			path = "StoryBoard+Controller";
+			sourceTree = "<group>";
+		};
 		E242CDCF2641483C009312D7 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +256,14 @@
 				E242CDD326414888009312D7 /* FavoriteViewModel.swift */,
 			);
 			path = viewModel;
+			sourceTree = "<group>";
+		};
+		E245C416265D1E27004BCA41 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				E245C417265D1E39004BCA41 /* PickerModel.swift */,
+			);
+			path = Picker;
 			sourceTree = "<group>";
 		};
 		E2476CC1263EB01B006A847C /* Wallet */ = {
@@ -226,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				E2476D06263EB90B006A847C /* WalletViewController.swift */,
+				E245C42D265D39D8004BCA41 /* BindingAndSubscribingwallet.swift */,
 				E2476CF2263EB6FC006A847C /* WalletStoryBoard.storyboard */,
 			);
 			path = "StoryBoard+Controller";
@@ -266,9 +351,11 @@
 			children = (
 				E24DF3D1263D831500E50834 /* EX */,
 				E24DF373263D69D300E50834 /* API SERVICE */,
+				E23CA9DC265BB2DD0074FEBA /* splash */,
 				E24DF37C263D6A5A00E50834 /* Login */,
-				E242CDCF2641483C009312D7 /* Favorites */,
 				E2476CC1263EB01B006A847C /* Wallet */,
+				E23CA9E2265BEBDB0074FEBA /* Profile */,
+				E242CDCF2641483C009312D7 /* Favorites */,
 				E24DF340263D640A00E50834 /* AppDelegate.swift */,
 				E24DF342263D640A00E50834 /* SceneDelegate.swift */,
 				E24DF346263D640A00E50834 /* Main.storyboard */,
@@ -330,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				E24DF344263D640A00E50834 /* ViewController.swift */,
+				E23C548D265A7B5700D64938 /* BindingAndSubscribingLogin.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -338,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				E24DF396263D6F4800E50834 /* LoginViewModel.swift */,
+				E25D452826565ABA0017F98E /* LoginAPI.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -460,6 +549,7 @@
 			files = (
 				E2476CF3263EB6FC006A847C /* WalletStoryBoard.storyboard in Resources */,
 				E24DF34D263D640F00E50834 /* LaunchScreen.storyboard in Resources */,
+				E23CA9E9265BEC490074FEBA /* Profile.storyboard in Resources */,
 				E24DF34A263D640F00E50834 /* Assets.xcassets in Resources */,
 				E24DF348263D640A00E50834 /* Main.storyboard in Resources */,
 			);
@@ -594,17 +684,27 @@
 				E2476CD0263EB0B5006A847C /* WalletModel.swift in Sources */,
 				E24DF3B5263D72E200E50834 /* LoginModel.swift in Sources */,
 				E2476CE0263EB301006A847C /* WalletMeta.swift in Sources */,
+				E23CA9DE265BB2FE0074FEBA /* SplashVC.swift in Sources */,
 				E242CDF0264152C9009312D7 /* WalletAPI.swift in Sources */,
+				E245C42E265D39D8004BCA41 /* BindingAndSubscribingwallet.swift in Sources */,
 				E2476CFC263EB726006A847C /* WalletTableViewCell.swift in Sources */,
 				E24DF3D3263D832600E50834 /* EX.swift in Sources */,
+				E245C3F4265CFA66004BCA41 /* ProfileModel.swift in Sources */,
 				E24DF3BA263D72FB00E50834 /* LoginFailureModel.swift in Sources */,
+				E245C418265D1E39004BCA41 /* PickerModel.swift in Sources */,
 				E2476CED263EB3C9006A847C /* ModelError.swift in Sources */,
 				E24DF341263D640A00E50834 /* AppDelegate.swift in Sources */,
+				E245C3EF265CFA4F004BCA41 /* ProfileAPI.swift in Sources */,
+				E23CA9EE265BEC5C0074FEBA /* ProfileVC.swift in Sources */,
+				E245C436265D3A71004BCA41 /* BindingAndSubscribingProfile.swift in Sources */,
 				E2476CC6263EB077006A847C /* WalletLinks.swift in Sources */,
+				E245C3EA265CFA42004BCA41 /* ProfileViewModel.swift in Sources */,
 				E24DF3BF263D732A00E50834 /* User.swift in Sources */,
 				E24DF375263D69F400E50834 /* APISERVICE.swift in Sources */,
+				E23C548E265A7B5700D64938 /* BindingAndSubscribingLogin.swift in Sources */,
 				E2476CD8263EB0EE006A847C /* WalletViewModel.swift in Sources */,
 				E2476D07263EB90B006A847C /* WalletViewController.swift in Sources */,
+				E25D452926565ABA0017F98E /* LoginAPI.swift in Sources */,
 				E2476CCB263EB092006A847C /* WalletData.swift in Sources */,
 				E24DF397263D6F4800E50834 /* LoginViewModel.swift in Sources */,
 				E24DF343263D640A00E50834 /* SceneDelegate.swift in Sources */,

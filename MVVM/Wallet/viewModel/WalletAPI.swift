@@ -8,13 +8,15 @@
 import Foundation
 import Alamofire
 
+//MARK:- WalletAPIProtocol
 protocol WalletAPIProtocol {
-    func getWallet(completion: @escaping (Result<WalletModel?, NetworkError>) -> Void)
+    typealias completionForWalletModelAndNetworkError = (Result<WalletModel?, NetworkError>) -> Void
+    func getWallet(completion: @escaping completionForWalletModelAndNetworkError)
 }
-
+//MARK:- WalletAPI
 class WalletAPI: WalletAPIProtocol {
     
-    func getWallet(completion: @escaping (Result<WalletModel?, NetworkError>) -> Void) {
+    func getWallet(completion: @escaping completionForWalletModelAndNetworkError) {
         
         let walletURL = "https://ahlanwashlan.com.sa/api/v2/wallet/history/49"
         
@@ -24,3 +26,4 @@ class WalletAPI: WalletAPIProtocol {
     }
     
 }
+//MARK:- End Of Class

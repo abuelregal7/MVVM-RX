@@ -74,9 +74,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Wallet" id="GB1-vP-nDg">
                         <barButtonItem key="leftBarButtonItem" title="back" id="M8C-LU-fla"/>
+                        <barButtonItem key="rightBarButtonItem" title="User" id="xgC-mn-MpB"/>
                     </navigationItem>
                     <connections>
                         <outlet property="backButtonOutlet" destination="M8C-LU-fla" id="0Tz-cO-yVR"/>
+                        <outlet property="profileButtonOutlet" destination="xgC-mn-MpB" id="xwH-0x-0I7"/>
                         <outlet property="walletContainerView" destination="FsV-DM-xNW" id="lMZ-Cb-ejZ"/>
                         <outlet property="walletTableView" destination="tRW-3h-WRj" id="x2H-l5-JjG"/>
                     </connections>
