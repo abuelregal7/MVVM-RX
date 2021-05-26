@@ -20,7 +20,6 @@ class SplashVC: UIViewController {
     //MARK:- ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         goToLoginOutlet.layer.masksToBounds = false
         subscribeToGoLoginButton()

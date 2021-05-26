@@ -48,6 +48,24 @@ extension WalletViewController {
                 print(selectedIndex, walletData.payment_method ?? "")
             }
             .disposed(by: disposeBag)
+        
+//        walletTableView
+//            .rx
+//            .modelSelected(WalletData.self) //1
+//            .subscribe(onNext: { [unowned self] walletData in // 2
+//                
+//                let alert = UIAlertController(title: "tapped!", message: "Tapped Successfully\n Your payment methos is \(walletData.payment_method ?? "")", preferredStyle: .alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+//                self.present(alert, animated: true, completion: nil)
+//                print(walletData.payment_method ?? "")//3
+//                
+//                if let selectedRowIndexPath = self.walletTableView.indexPathForSelectedRow {
+//                  self.walletTableView.deselectRow(at: selectedRowIndexPath, animated: true)
+//                    print("selectedRowIndexPath : \(selectedRowIndexPath)")
+//                } //4
+//                
+//            })
+//            .disposed(by: disposeBag) //5
     }
     
     //MARK:- Get Wallet, Fetch Wallet, Parse Wallet
