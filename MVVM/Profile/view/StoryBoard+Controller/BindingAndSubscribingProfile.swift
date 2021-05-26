@@ -33,9 +33,25 @@ extension ProfileVC {
         }.disposed(by: disposeBag)
                 
         // this pipe displays the picked item in the text field
-        Observable.combineLatest(items2, pickerView.rx.itemSelected) { $0[$1.row].name }
-            .bind(to: textFieldOutlet.rx.text)
-            .disposed(by: disposeBag)
+//        Observable.combineLatest(items2, pickerView.rx.itemSelected) { $0[$1.row].name }
+//            .bind(to: textFieldOutlet.rx.text)
+//            .disposed(by: disposeBag)
+        
+        pickerView
+            .rx
+            .modelSelected(PickerModel.self) //1
+            .subscribe(onNext: { [unowned self] pickerModel in // 2
+                
+                for x in pickerModel {
+                    let alert = UIAlertController(title: "tapped!", message: "Tapped Successfully\n Your Name is \(x.name ?? "")", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                    print(x.name ?? "")//3
+                    self.textFieldOutlet.text = x.name
+                }
+                
+            })
+            .disposed(by: disposeBag) //5
         
     }
     
