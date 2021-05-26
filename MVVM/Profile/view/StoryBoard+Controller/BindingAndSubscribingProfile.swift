@@ -33,10 +33,11 @@ extension ProfileVC {
         }.disposed(by: disposeBag)
                 
         // this pipe displays the picked item in the text field
-//        Observable.combineLatest(items2, pickerView.rx.itemSelected) { $0[$1.row].name }
-//            .bind(to: textFieldOutlet.rx.text)
-//            .disposed(by: disposeBag)
+        //        Observable.combineLatest(items2, pickerView.rx.itemSelected) { $0[$1.row].name }
+        //            .bind(to: textFieldOutlet.rx.text)
+        //            .disposed(by: disposeBag)
         
+        // this pipe displays the picked item in the text field
         pickerView
             .rx
             .modelSelected(PickerModel.self) //1

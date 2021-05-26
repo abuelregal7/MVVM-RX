@@ -26,7 +26,7 @@
                                 <state key="normal" image="arrowshape.turn.up.backward.fill" catalog="system"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="158" translatesAutoresizingMaskIntoConstraints="NO" id="K21-L7-aB9">
-                                <rect key="frame" x="30" y="220" width="354" height="358"/>
+                                <rect key="frame" x="30" y="269" width="354" height="358"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ZxF-My-LdJ">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="150"/>
@@ -124,12 +124,13 @@
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                         <constraints>
                             <constraint firstItem="R3u-ay-78i" firstAttribute="trailing" secondItem="K21-L7-aB9" secondAttribute="trailing" constant="30" id="10q-uq-vEe"/>
+                            <constraint firstItem="K21-L7-aB9" firstAttribute="centerX" secondItem="rht-Cs-gKp" secondAttribute="centerX" id="32e-dP-N5f"/>
                             <constraint firstItem="R3u-ay-78i" firstAttribute="trailing" secondItem="XiQ-Nv-ldP" secondAttribute="trailing" constant="20" id="3yo-LN-3Rg"/>
                             <constraint firstItem="Idx-0V-1O0" firstAttribute="leading" secondItem="R3u-ay-78i" secondAttribute="leading" constant="20" id="BTA-dH-dFs"/>
                             <constraint firstItem="Idx-0V-1O0" firstAttribute="centerY" secondItem="XiQ-Nv-ldP" secondAttribute="centerY" id="SiG-X6-VO3"/>
-                            <constraint firstItem="K21-L7-aB9" firstAttribute="top" secondItem="Idx-0V-1O0" secondAttribute="bottom" constant="136" id="TQG-qD-N6A"/>
                             <constraint firstItem="XiQ-Nv-ldP" firstAttribute="top" secondItem="R3u-ay-78i" secondAttribute="top" id="l16-AM-7uE"/>
                             <constraint firstItem="K21-L7-aB9" firstAttribute="leading" secondItem="R3u-ay-78i" secondAttribute="leading" constant="30" id="qy5-8s-ilV"/>
+                            <constraint firstItem="K21-L7-aB9" firstAttribute="centerY" secondItem="rht-Cs-gKp" secondAttribute="centerY" id="y7b-wL-c5f"/>
                         </constraints>
                     </view>
                     <connections>
