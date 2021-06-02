@@ -17,6 +17,7 @@ extension Error
 public enum NetworkError: Error
 {
     case invalidResponse
+    case invalidData
     case badJSON
     case noConnection
     case noData
@@ -356,6 +357,8 @@ extension NetworkError: LocalizedError
         
         case .invalidResponse:
             return NSLocalizedString("Invalid response from a server, please try again", comment: "")
+        case .invalidData:
+            return NSLocalizedString("The data received from the server wa invalid, please try again", comment: "")
         case .badJSON:
             return NSLocalizedString("The data from the server is dammeged, status: 100", comment: "")
         case .noConnection:
@@ -504,7 +507,7 @@ extension NetworkError: LocalizedError
         case .networkAuthenticationRequired:
             return NSLocalizedString("networkAuthenticationRequired: The client needs to authenticate to gain network access., status: 511", comment: "")
         default:
-            return NSLocalizedString("There is something wrong please try again later, status: 100", comment: "")
+            return NSLocalizedString("There is something wrong please try again later, status: ", comment: "")
             
         }
     }

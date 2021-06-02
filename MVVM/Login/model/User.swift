@@ -20,6 +20,7 @@ struct User : Codable {
     let balance : Int?
     let orders : Int?
     let wishlists : Int?
+    let remember_token: String?
 
     enum CodingKeys: String, CodingKey {
 
@@ -35,6 +36,7 @@ struct User : Codable {
         case balance = "balance"
         case orders = "orders"
         case wishlists = "wishlists"
+        case remember_token = "remember_token"
     }
 
     init(from decoder: Decoder) throws {
@@ -51,6 +53,7 @@ struct User : Codable {
         balance = try values.decodeIfPresent(Int.self, forKey: .balance)
         orders = try values.decodeIfPresent(Int.self, forKey: .orders)
         wishlists = try values.decodeIfPresent(Int.self, forKey: .wishlists)
+        remember_token = try values.decodeIfPresent(String.self, forKey: .remember_token)
     }
 
 }

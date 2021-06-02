@@ -33,10 +33,10 @@ class SplashVC: UIViewController {
             .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
                 print("buttonTapped")
-                if let walletVC = UIStoryboard(name: "WalletStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "WalletViewController") as? WalletViewController {
+                if let walletVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as? ViewController {
                     
                     let navController = UINavigationController(rootViewController: walletVC)
-                    navController.isNavigationBarHidden = false
+                    navController.isNavigationBarHidden = true
                     navController.modalPresentationStyle = .fullScreen
                     self.present(navController, animated: true, completion: nil)
                 }

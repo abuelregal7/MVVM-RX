@@ -18,7 +18,8 @@ extension WalletViewController {
     
     //MARK:- Subscribe To Loading
     func subscribeToLoading() {
-        walletViewModel.loadingBehavior.subscribe(onNext: { (isLoading) in
+        walletViewModel.loadingBehavior.subscribe(onNext: { [weak self] (isLoading) in
+            guard let self = self else { return }
             if isLoading {
                 self.showIndicator(withTitle: "", and: "")
             } else {
@@ -33,6 +34,8 @@ extension WalletViewController {
         walletViewModel.walletModelObservable.bind(to: walletTableView.rx.items(cellIdentifier: walletTableViewCell, cellType: WalletTableViewCell.self)) { row, data, cell in
             cell.textLabel?.text = data.payment_method ?? ""
         }.disposed(by: disposeBag)
+        
+        //walletViewModel.walletModelObservable.subscribe(onNext: <#T##(([WalletData]) -> Void)?##(([WalletData]) -> Void)?##([WalletData]) -> Void#>)
     }
     
     //MARK:- Subscribe To Wallet Selection

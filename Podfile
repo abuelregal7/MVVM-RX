@@ -9,6 +9,7 @@ target 'MVVM' do
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'RSSelectionMenu'
 
   # Pods for MVVM
 

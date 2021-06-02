@@ -47,8 +47,8 @@ extension ProfileVC {
                     let alert = UIAlertController(title: "tapped!", message: "Tapped Successfully\n Your Name is \(x.name ?? "")", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
-                    print(x.name ?? "")//3
-                    self.textFieldOutlet.text = x.name
+                    print(x.name ?? "") //3
+                    self.textFieldOutlet.text = x.name //3
                 }
                 
             })
@@ -76,7 +76,8 @@ extension ProfileVC {
     
     //MARK:- Subscribe To Loading
     func subscribeToLoading() {
-        profileViewModel.loadingBehavior.subscribe(onNext: { (isLoading) in
+        profileViewModel.loadingBehavior.subscribe(onNext: { [weak self] (isLoading) in
+            guard let self = self else { return }
             if isLoading {
                 self.showIndicator(withTitle: "", and: "")
             } else {
@@ -114,6 +115,13 @@ extension ProfileVC {
             .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
+                if let showMenuVC = UIStoryboard(name: "ShowMenu", bundle: nil).instantiateViewController(withIdentifier: "ShowMenuVC") as? ShowMenuVC {
+                    let navController = UINavigationController(rootViewController: showMenuVC)
+                    navController.isNavigationBarHidden = true
+                    navController.modalPresentationStyle = .fullScreen
+                    self.present(navController, animated: true, completion: nil)
+                    
+                }
                 print("buttonTapped")
             }).disposed(by: disposeBag)
     }

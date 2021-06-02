@@ -23,6 +23,20 @@
 		E245C418265D1E39004BCA41 /* PickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245C417265D1E39004BCA41 /* PickerModel.swift */; };
 		E245C42E265D39D8004BCA41 /* BindingAndSubscribingwallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245C42D265D39D8004BCA41 /* BindingAndSubscribingwallet.swift */; };
 		E245C436265D3A71004BCA41 /* BindingAndSubscribingProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245C435265D3A71004BCA41 /* BindingAndSubscribingProfile.swift */; };
+		E24730A2266780F400057592 /* AddressData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730A1266780F400057592 /* AddressData.swift */; };
+		E24730A72667811400057592 /* AddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730A62667811400057592 /* AddressModel.swift */; };
+		E24730AC2667817B00057592 /* DeliveryAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730AB2667817B00057592 /* DeliveryAddressVC.swift */; };
+		E24730B12667819600057592 /* DeliveryAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730B02667819600057592 /* DeliveryAddressViewModel.swift */; };
+		E24730B6266782ED00057592 /* DeleveryAddressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730B5266782EC00057592 /* DeleveryAddressAPI.swift */; };
+		E24730BB2667873E00057592 /* DeliveryAddress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24730BA2667873E00057592 /* DeliveryAddress.storyboard */; };
+		E24730C12667885F00057592 /* DeliveryAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730C02667885F00057592 /* DeliveryAddressCell.swift */; };
+		E24730CA266795CD00057592 /* DeleteAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730C9266795CD00057592 /* DeleteAddressModel.swift */; };
+		E24730D02667961D00057592 /* DefultAddressModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730CF2667961D00057592 /* DefultAddressModel.swift */; };
+		E24730D82667965700057592 /* DeleteAddressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730D72667965700057592 /* DeleteAddressAPI.swift */; };
+		E24730DD266796C900057592 /* SetDefultAddressAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730DC266796C900057592 /* SetDefultAddressAPI.swift */; };
+		E24730E52667AC6600057592 /* BindingAndSubscribingAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730E42667AC6600057592 /* BindingAndSubscribingAddress.swift */; };
+		E24730F12667AFEF00057592 /* AddNewAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730F02667AFEF00057592 /* AddNewAddressVC.swift */; };
+		E24730F62667B76300057592 /* BindingAndSubscribingShowMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24730F52667B76300057592 /* BindingAndSubscribingShowMenu.swift */; };
 		E2476CC6263EB077006A847C /* WalletLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2476CC5263EB077006A847C /* WalletLinks.swift */; };
 		E2476CCB263EB092006A847C /* WalletData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2476CCA263EB092006A847C /* WalletData.swift */; };
 		E2476CD0263EB0B5006A847C /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2476CCF263EB0B5006A847C /* WalletModel.swift */; };
@@ -47,6 +61,9 @@
 		E24DF3BF263D732A00E50834 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DF3BE263D732A00E50834 /* User.swift */; };
 		E24DF3D3263D832600E50834 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DF3D2263D832600E50834 /* EX.swift */; };
 		E25D452926565ABA0017F98E /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D452826565ABA0017F98E /* LoginAPI.swift */; };
+		E25D7F5B26664BD100DAC671 /* ShowMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D7F5A26664BD100DAC671 /* ShowMenuViewModel.swift */; };
+		E25D7F6326664BEE00DAC671 /* ShowMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25D7F6226664BEE00DAC671 /* ShowMenuVC.swift */; };
+		E25D7F6826664BFE00DAC671 /* ShowMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25D7F6726664BFE00DAC671 /* ShowMenu.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +106,20 @@
 		E245C417265D1E39004BCA41 /* PickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerModel.swift; sourceTree = "<group>"; };
 		E245C42D265D39D8004BCA41 /* BindingAndSubscribingwallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingAndSubscribingwallet.swift; sourceTree = "<group>"; };
 		E245C435265D3A71004BCA41 /* BindingAndSubscribingProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingAndSubscribingProfile.swift; sourceTree = "<group>"; };
+		E24730A1266780F400057592 /* AddressData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressData.swift; sourceTree = "<group>"; };
+		E24730A62667811400057592 /* AddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModel.swift; sourceTree = "<group>"; };
+		E24730AB2667817B00057592 /* DeliveryAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryAddressVC.swift; sourceTree = "<group>"; };
+		E24730B02667819600057592 /* DeliveryAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryAddressViewModel.swift; sourceTree = "<group>"; };
+		E24730B5266782EC00057592 /* DeleveryAddressAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleveryAddressAPI.swift; sourceTree = "<group>"; };
+		E24730BA2667873E00057592 /* DeliveryAddress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeliveryAddress.storyboard; sourceTree = "<group>"; };
+		E24730C02667885F00057592 /* DeliveryAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryAddressCell.swift; sourceTree = "<group>"; };
+		E24730C9266795CD00057592 /* DeleteAddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAddressModel.swift; sourceTree = "<group>"; };
+		E24730CF2667961D00057592 /* DefultAddressModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefultAddressModel.swift; sourceTree = "<group>"; };
+		E24730D72667965700057592 /* DeleteAddressAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteAddressAPI.swift; sourceTree = "<group>"; };
+		E24730DC266796C900057592 /* SetDefultAddressAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetDefultAddressAPI.swift; sourceTree = "<group>"; };
+		E24730E42667AC6600057592 /* BindingAndSubscribingAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingAndSubscribingAddress.swift; sourceTree = "<group>"; };
+		E24730F02667AFEF00057592 /* AddNewAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAddressVC.swift; sourceTree = "<group>"; };
+		E24730F52667B76300057592 /* BindingAndSubscribingShowMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingAndSubscribingShowMenu.swift; sourceTree = "<group>"; };
 		E2476CC5263EB077006A847C /* WalletLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletLinks.swift; sourceTree = "<group>"; };
 		E2476CCA263EB092006A847C /* WalletData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletData.swift; sourceTree = "<group>"; };
 		E2476CCF263EB0B5006A847C /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
@@ -119,6 +150,9 @@
 		E24DF3BE263D732A00E50834 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E24DF3D2263D832600E50834 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
 		E25D452826565ABA0017F98E /* LoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		E25D7F5A26664BD100DAC671 /* ShowMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMenuViewModel.swift; sourceTree = "<group>"; };
+		E25D7F6226664BEE00DAC671 /* ShowMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMenuVC.swift; sourceTree = "<group>"; };
+		E25D7F6726664BFE00DAC671 /* ShowMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowMenu.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +300,131 @@
 			path = Picker;
 			sourceTree = "<group>";
 		};
+		E247309D2667805A00057592 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				E24730A02667807D00057592 /* viewModel */,
+				E247309F2667807000057592 /* view */,
+				E247309E2667806900057592 /* model */,
+			);
+			name = Address;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		E247309E2667806900057592 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E24730A62667811400057592 /* AddressModel.swift */,
+				E24730A1266780F400057592 /* AddressData.swift */,
+				E24730CE266795DA00057592 /* Defult Address */,
+				E24730C8266795BA00057592 /* Delete Address */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E247309F2667807000057592 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E24730AB2667817B00057592 /* DeliveryAddressVC.swift */,
+				E24730E42667AC6600057592 /* BindingAndSubscribingAddress.swift */,
+				E24730BA2667873E00057592 /* DeliveryAddress.storyboard */,
+				E24730BF2667883800057592 /* cell */,
+			);
+			name = view;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		E24730A02667807D00057592 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E24730B02667819600057592 /* DeliveryAddressViewModel.swift */,
+				E24730B5266782EC00057592 /* DeleveryAddressAPI.swift */,
+				E24730D72667965700057592 /* DeleteAddressAPI.swift */,
+				E24730DC266796C900057592 /* SetDefultAddressAPI.swift */,
+			);
+			name = viewModel;
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
+		E24730BF2667883800057592 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E24730C02667885F00057592 /* DeliveryAddressCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		E24730C8266795BA00057592 /* Delete Address */ = {
+			isa = PBXGroup;
+			children = (
+				E24730C9266795CD00057592 /* DeleteAddressModel.swift */,
+			);
+			path = "Delete Address";
+			sourceTree = "<group>";
+		};
+		E24730CE266795DA00057592 /* Defult Address */ = {
+			isa = PBXGroup;
+			children = (
+				E24730CF2667961D00057592 /* DefultAddressModel.swift */,
+			);
+			path = "Defult Address";
+			sourceTree = "<group>";
+		};
+		E24730E12667AB4200057592 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E24730E32667AB6E00057592 /* URL */,
+				E24730E22667AB5F00057592 /* Helper */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		E24730E22667AB5F00057592 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E24730E32667AB6E00057592 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		E24730E92667AFA600057592 /* New Address */ = {
+			isa = PBXGroup;
+			children = (
+				E24730EC2667AFBA00057592 /* viewModel */,
+				E24730EB2667AFB600057592 /* view */,
+				E24730EA2667AFB000057592 /* model */,
+			);
+			path = "New Address";
+			sourceTree = "<group>";
+		};
+		E24730EA2667AFB000057592 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E24730EB2667AFB600057592 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E24730F02667AFEF00057592 /* AddNewAddressVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E24730EC2667AFBA00057592 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
 		E2476CC1263EB01B006A847C /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,11 +509,15 @@
 			isa = PBXGroup;
 			children = (
 				E24DF3D1263D831500E50834 /* EX */,
+				E24730E12667AB4200057592 /* Constant */,
 				E24DF373263D69D300E50834 /* API SERVICE */,
 				E23CA9DC265BB2DD0074FEBA /* splash */,
 				E24DF37C263D6A5A00E50834 /* Login */,
 				E2476CC1263EB01B006A847C /* Wallet */,
 				E23CA9E2265BEBDB0074FEBA /* Profile */,
+				E25D7F5626664B8D00DAC671 /* ShowMenu */,
+				E247309D2667805A00057592 /* Address */,
+				E24730E92667AFA600057592 /* New Address */,
 				E242CDCF2641483C009312D7 /* Favorites */,
 				E24DF340263D640A00E50834 /* AppDelegate.swift */,
 				E24DF342263D640A00E50834 /* SceneDelegate.swift */,
@@ -437,6 +600,41 @@
 				E24DF3D2263D832600E50834 /* EX.swift */,
 			);
 			path = EX;
+			sourceTree = "<group>";
+		};
+		E25D7F5626664B8D00DAC671 /* ShowMenu */ = {
+			isa = PBXGroup;
+			children = (
+				E25D7F5926664BAF00DAC671 /* viewModel */,
+				E25D7F5826664BAA00DAC671 /* view */,
+				E25D7F5726664BA500DAC671 /* model */,
+			);
+			path = ShowMenu;
+			sourceTree = "<group>";
+		};
+		E25D7F5726664BA500DAC671 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E25D7F5826664BAA00DAC671 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E25D7F6226664BEE00DAC671 /* ShowMenuVC.swift */,
+				E24730F52667B76300057592 /* BindingAndSubscribingShowMenu.swift */,
+				E25D7F6726664BFE00DAC671 /* ShowMenu.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E25D7F5926664BAF00DAC671 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E25D7F5A26664BD100DAC671 /* ShowMenuViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,10 +745,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24730BB2667873E00057592 /* DeliveryAddress.storyboard in Resources */,
 				E2476CF3263EB6FC006A847C /* WalletStoryBoard.storyboard in Resources */,
 				E24DF34D263D640F00E50834 /* LaunchScreen.storyboard in Resources */,
 				E23CA9E9265BEC490074FEBA /* Profile.storyboard in Resources */,
 				E24DF34A263D640F00E50834 /* Assets.xcassets in Resources */,
+				E25D7F6826664BFE00DAC671 /* ShowMenu.storyboard in Resources */,
 				E24DF348263D640A00E50834 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -679,9 +879,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24730A2266780F400057592 /* AddressData.swift in Sources */,
+				E24730B6266782ED00057592 /* DeleveryAddressAPI.swift in Sources */,
+				E24730F62667B76300057592 /* BindingAndSubscribingShowMenu.swift in Sources */,
 				E242CDD426414888009312D7 /* FavoriteViewModel.swift in Sources */,
 				E24DF345263D640A00E50834 /* ViewController.swift in Sources */,
 				E2476CD0263EB0B5006A847C /* WalletModel.swift in Sources */,
+				E24730AC2667817B00057592 /* DeliveryAddressVC.swift in Sources */,
+				E24730F12667AFEF00057592 /* AddNewAddressVC.swift in Sources */,
+				E24730E52667AC6600057592 /* BindingAndSubscribingAddress.swift in Sources */,
+				E25D7F5B26664BD100DAC671 /* ShowMenuViewModel.swift in Sources */,
 				E24DF3B5263D72E200E50834 /* LoginModel.swift in Sources */,
 				E2476CE0263EB301006A847C /* WalletMeta.swift in Sources */,
 				E23CA9DE265BB2FE0074FEBA /* SplashVC.swift in Sources */,
@@ -691,6 +898,7 @@
 				E24DF3D3263D832600E50834 /* EX.swift in Sources */,
 				E245C3F4265CFA66004BCA41 /* ProfileModel.swift in Sources */,
 				E24DF3BA263D72FB00E50834 /* LoginFailureModel.swift in Sources */,
+				E24730A72667811400057592 /* AddressModel.swift in Sources */,
 				E245C418265D1E39004BCA41 /* PickerModel.swift in Sources */,
 				E2476CED263EB3C9006A847C /* ModelError.swift in Sources */,
 				E24DF341263D640A00E50834 /* AppDelegate.swift in Sources */,
@@ -698,16 +906,23 @@
 				E23CA9EE265BEC5C0074FEBA /* ProfileVC.swift in Sources */,
 				E245C436265D3A71004BCA41 /* BindingAndSubscribingProfile.swift in Sources */,
 				E2476CC6263EB077006A847C /* WalletLinks.swift in Sources */,
+				E24730B12667819600057592 /* DeliveryAddressViewModel.swift in Sources */,
 				E245C3EA265CFA42004BCA41 /* ProfileViewModel.swift in Sources */,
 				E24DF3BF263D732A00E50834 /* User.swift in Sources */,
+				E24730CA266795CD00057592 /* DeleteAddressModel.swift in Sources */,
 				E24DF375263D69F400E50834 /* APISERVICE.swift in Sources */,
 				E23C548E265A7B5700D64938 /* BindingAndSubscribingLogin.swift in Sources */,
+				E24730D82667965700057592 /* DeleteAddressAPI.swift in Sources */,
 				E2476CD8263EB0EE006A847C /* WalletViewModel.swift in Sources */,
 				E2476D07263EB90B006A847C /* WalletViewController.swift in Sources */,
+				E25D7F6326664BEE00DAC671 /* ShowMenuVC.swift in Sources */,
 				E25D452926565ABA0017F98E /* LoginAPI.swift in Sources */,
 				E2476CCB263EB092006A847C /* WalletData.swift in Sources */,
 				E24DF397263D6F4800E50834 /* LoginViewModel.swift in Sources */,
 				E24DF343263D640A00E50834 /* SceneDelegate.swift in Sources */,
+				E24730C12667885F00057592 /* DeliveryAddressCell.swift in Sources */,
+				E24730D02667961D00057592 /* DefultAddressModel.swift in Sources */,
+				E24730DD266796C900057592 /* SetDefultAddressAPI.swift in Sources */,
 				E242CDE626414CCB009312D7 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

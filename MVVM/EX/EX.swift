@@ -45,6 +45,61 @@ extension String {
         NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: self)
     }
 }
+
+extension UIButton {
+    
+    func pulsate() {
+        
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = 0.2
+        pulse.fromValue = 0.95
+        pulse.toValue = 1.0
+        pulse.autoreverses = true
+        pulse.repeatCount = .infinity
+        //pulse.repeatCount = 2
+        pulse.initialVelocity = 0.5
+        pulse.damping = 1.0
+        
+        layer.add(pulse, forKey: "pulse")
+        
+    }
+    
+    func flash() {
+        
+        let flash = CABasicAnimation(keyPath: "opacity")
+        flash.duration = 0.2
+        flash.fromValue = 1
+        flash.toValue = 0.1
+        flash.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        flash.autoreverses = true
+        flash.repeatCount = .infinity
+        //flash.repeatCount = 3
+        
+        layer.add(flash, forKey: nil)
+    }
+    
+    
+    func shake() {
+        
+        let shake = CABasicAnimation(keyPath: "position")
+        shake.duration = 0.05
+        //shake.repeatCount = .infinity
+        shake.repeatCount = 5
+        shake.autoreverses = true
+        
+        let fromPoint = CGPoint(x: center.x - 5, y: center.y)
+        let fromValue = NSValue(cgPoint: fromPoint)
+        
+        let toPoint = CGPoint(x: center.x + 5, y: center.y)
+        let toValue = NSValue(cgPoint: toPoint)
+        
+        shake.fromValue = fromValue
+        shake.toValue = toValue
+        
+        layer.add(shake, forKey: "position")
+    }
+}
+
 extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         get {
@@ -55,7 +110,7 @@ extension UIView {
             layer.masksToBounds = newValue > 0
         }
     }
-
+    
     @IBInspectable var borderWidth: CGFloat {
         get {
             return layer.borderWidth
@@ -64,7 +119,7 @@ extension UIView {
             layer.borderWidth = newValue
         }
     }
-
+    
     @IBInspectable var borderColor: UIColor? {
         get {
             return UIColor(cgColor: layer.borderColor!)
@@ -73,7 +128,7 @@ extension UIView {
             layer.borderColor = newValue?.cgColor
         }
     }
-
+    
     @IBInspectable
     var shadowRadius: CGFloat {
         get {
@@ -84,7 +139,7 @@ extension UIView {
             layer.shadowRadius = newValue
         }
     }
-
+    
     @IBInspectable
     var shadowOpacity: Float {
         get {
@@ -95,7 +150,7 @@ extension UIView {
             layer.shadowOpacity = newValue
         }
     }
-
+    
     @IBInspectable
     var shadowOffset: CGSize {
         get {
@@ -106,7 +161,7 @@ extension UIView {
             layer.shadowOffset = newValue
         }
     }
-
+    
     @IBInspectable
     var shadowColor: UIColor? {
         get {
