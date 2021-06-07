@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     var error = ""
     //disposeBag
     let disposeBag = DisposeBag()
-    
     //MARK:- viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +30,23 @@ class ViewController: UIViewController {
         loginButtonOutlet.layer.cornerRadius = 10
         
         callBingingAndSubscribing()
+        //emailTFOutlet.addTarget(self, action: #selector(handleTextChange), for: .editingChanged)
+        //print("١٢٣٤٥٦٧٨٩".replacedArabicDigitsWithEnglish)
+        //print("123456789".replacedEnglishDigitsWithArabic)
+    }
+    @objc func handleTextChange(_ textChange: UITextField) {
+        if emailTFOutlet.text?.count == 9 || emailTFOutlet.text?.count == 11 {
+            emailTFOutlet.keyboardType = .numberPad
+            emailTFOutlet.reloadInputViews() // need to reload the input view for this to work
+        } else {
+            emailTFOutlet.keyboardType = .default
+            emailTFOutlet.reloadInputViews()
+        }
+        
     }
     //MARK:- CallBinging And Subscribing
     func callBingingAndSubscribing() {
+        //emailTFOutlet.text = "momo@a.com"
         sbuscribeToEmailTFAndPasswordTF()
         bindTextFieldsToViewModel()
         subscribeToLoading()
@@ -42,19 +55,6 @@ class ViewController: UIViewController {
         //subscribeIsLoginEnabled()
         subscribeToLoginButton()
         subscribeToBackButton()
-        //emailTFOutlet.text = "momo@a.com"
     }
-    //MARK:- Back Button
-    func subscribeToBackButton() {
-        backButtonOutlet
-            .rx
-            .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
-            .subscribe(onNext: { [weak self] (_) in
-                guard let self = self else { return }
-                print("buttonTapped")
-                self.dismiss(animated: true, completion: nil)
-            }).disposed(by: disposeBag)
-    }
-    
 }
+//MARK:- End Class

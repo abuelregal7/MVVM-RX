@@ -27,6 +27,7 @@ class ShowMenuVC: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor().colorWithHexString(hexString: "8EC740")
         popUpMenuButtonOutlet.pulsate()
         callBindAndSubscribtionFunction()
     }

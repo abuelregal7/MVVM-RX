@@ -53,11 +53,12 @@ extension DeliveryAddressVC {
             cell.deleteAddress
                 .rx
                 .tap
-                .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
+                .throttle(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
                 .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
                     print("buttonTapped")
                     print(row)
+                    cell.deleteAddress.shake()
                     let alert = UIAlertController(title: "Delete Address", message: "Are you sure?, you want to delete this Address", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] (action) in
                         guard let self = self else { return }
@@ -72,11 +73,12 @@ extension DeliveryAddressVC {
             cell.defultAddress
                 .rx
                 .tap
-                .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
+                .throttle(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
                 .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
                     print("buttonTapped")
                     print(row)
+                    cell.defultAddress.shake()
                     let alert = UIAlertController(title: "Set Defult Address", message: "Are you sure?, you want to set this Address as defult", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] (action) in
                         guard let self = self else { return }
@@ -115,7 +117,6 @@ extension DeliveryAddressVC {
         backButtonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
             .subscribe(onNext: {[weak self] (_) in
             guard let self = self else { return }
                 print("buttonTapped")
@@ -129,7 +130,7 @@ extension DeliveryAddressVC {
         newAddressButtonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
+            .throttle(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext: {[weak self] (_) in
             guard let self = self else { return }
                 print("buttonTapped")

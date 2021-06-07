@@ -29,7 +29,6 @@ class AddNewAddressVC: UIViewController {
         backButtonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
             .subscribe(onNext: {[weak self] (_) in
             guard let self = self else { return }
                 print("buttonTapped")

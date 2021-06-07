@@ -51,10 +51,11 @@ extension ShowMenuVC {
         popUpMenuButtonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
+            .throttle(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext: {[weak self] (_) in
             guard let self = self else { return }
                 print("buttonTapped")
+                self.popUpMenuButtonOutlet.shake()
                 self.setUpMenu()
                 
             }).disposed(by: disposeBag)
@@ -65,7 +66,6 @@ extension ShowMenuVC {
         backbuttonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
             .subscribe(onNext: {[weak self] (_) in
             guard let self = self else { return }
                 print("buttonTapped")
@@ -78,10 +78,11 @@ extension ShowMenuVC {
         addressButtonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
+            .throttle(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext: {[weak self] (_) in
             guard let self = self else { return }
                 print("buttonTapped")
+                self.addressButtonOutlet.shake()
                 if let deliveryAddressVC = UIStoryboard(name: "DeliveryAddress", bundle: nil).instantiateViewController(withIdentifier: "DeliveryAddressVC") as? DeliveryAddressVC {
                     let navController = UINavigationController(rootViewController: deliveryAddressVC)
                     navController.isNavigationBarHidden = false

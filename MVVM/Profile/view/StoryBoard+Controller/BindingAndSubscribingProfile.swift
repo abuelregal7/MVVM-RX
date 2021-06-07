@@ -10,7 +10,8 @@ import RxCocoa
 import RxSwift
 
 extension ProfileVC {
-    
+    //chevron.backward
+    //arrowshape.turn.up.backward.fill
     //MARK:- BindTextFieldsToViewModel
     func bindToTextField() {
         textFieldOutlet.rx.text.orEmpty.bind(to: profileViewModel.textFieldBehavior).disposed(by: disposeBag)
@@ -99,7 +100,6 @@ extension ProfileVC {
         backButtonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
                 print("buttonTapped")
@@ -112,7 +112,7 @@ extension ProfileVC {
         pickerButtonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
+            .throttle(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
                 if let showMenuVC = UIStoryboard(name: "ShowMenu", bundle: nil).instantiateViewController(withIdentifier: "ShowMenuVC") as? ShowMenuVC {

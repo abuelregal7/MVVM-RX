@@ -14,7 +14,7 @@ class FavoriteViewModel {
     func getFavorite() {
         
            
-            let postsUrl = "https://ahlanwashlan.com.sa/api/v2/wishlists/51"
+            //let postsUrl = "https://ahlanwashlan.com.sa/api/v2/wishlists/51"
             
 //            let headers: HTTPHeaders = [
 //                "Authorization": "Bearer \(Helper.getToken()!)"

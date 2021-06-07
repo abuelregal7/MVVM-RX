@@ -164,7 +164,7 @@ class ApiServices {
                 
                 guard let statusCode = response.response?.statusCode else {
                     
-                    completion(.failure(NetworkError((self.dataResponse?.response!.statusCode)!)))
+                    completion(.failure(.noConnection))
                     return
                 }
                 //if statusCode == 200
@@ -202,9 +202,6 @@ class ApiServices {
                 }else if statusCode == 102 {
                     // ADD custom error base on status code 102
                     completion(.failure(.processing))
-                }else if statusCode == 200 {
-                    // ADD custom error base on status code 200
-                    completion(.failure(.ok))
                 }else if statusCode == 201 {
                     // ADD custom error base on status code 201
                     completion(.failure(.created))

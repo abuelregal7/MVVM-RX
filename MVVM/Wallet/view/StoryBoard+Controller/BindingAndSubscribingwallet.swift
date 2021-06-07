@@ -9,7 +9,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-extension WalletViewController {
+extension WalletViewController/*: UITableViewDelegate*/ {
     
     //MARK:- Bind To Hidden Table
     func bindToHiddenTable() {
@@ -30,6 +30,8 @@ extension WalletViewController {
     
     //MARK:- Subscribe To Response, Like as TableView DataSource and Delegate
     func subscribeToResponse() {
+        
+        //walletTableView.rx.setDelegate(self).disposed(by: disposeBag)
         
         walletViewModel.walletModelObservable.bind(to: walletTableView.rx.items(cellIdentifier: walletTableViewCell, cellType: WalletTableViewCell.self)) { row, data, cell in
             cell.textLabel?.text = data.payment_method ?? ""
@@ -94,7 +96,6 @@ extension WalletViewController {
         profileButtonOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
                 print("buttonTapped")

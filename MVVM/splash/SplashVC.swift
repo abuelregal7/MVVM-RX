@@ -29,12 +29,12 @@ class SplashVC: UIViewController {
         goToLoginOutlet
             .rx
             .tap
-            .throttle(RxTimeInterval.milliseconds(0), scheduler: MainScheduler.instance)
+            .throttle(RxTimeInterval.milliseconds(500), scheduler: MainScheduler.instance)
             .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
                 print("buttonTapped")
+                self.goToLoginOutlet.shake()
                 if let walletVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as? ViewController {
-                    
                     let navController = UINavigationController(rootViewController: walletVC)
                     navController.isNavigationBarHidden = true
                     navController.modalPresentationStyle = .fullScreen

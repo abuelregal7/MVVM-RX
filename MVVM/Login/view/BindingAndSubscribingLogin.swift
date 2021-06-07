@@ -9,7 +9,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-//MARK: - Binging
+//MARK: - Binding
 extension ViewController {
     
     //MARK:- BindTextFieldsToViewModel
@@ -57,7 +57,10 @@ extension ViewController {
                     guard let self = self else { return }
                     print(msg)
                     let alert = UIAlertController(title: "Error", message: "Something went wrong\("\n\(msg)")", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] action in
+                        guard let self = self else { return }
+                        self.loginButtonOutlet.shake()
+                    }))
                     self.present(alert, animated: true, completion: nil)
                 }).disposed(by: self.disposeBag)
             }else if alert == true {
@@ -97,7 +100,6 @@ extension ViewController {
         loginViewModel.isLoginButtonEnabled.bind(to: loginButtonOutlet.rx.isEnabled).disposed(by: disposeBag)
     }
     
-    
     //MARK:- SubscribeToLoginButton
     func subscribeToLoginButton() {
         loginButtonOutlet
@@ -113,8 +115,8 @@ extension ViewController {
                     self.emailTFOutlet.becomeFirstResponder()
                     return false
                 }
-                guard self.emailTFOutlet.text!.isValidEmail else {
-                    let alert = UIAlertController(title: "Error", message: "email are not valid, valid email", preferredStyle: .alert)
+                guard self.emailTFOutlet.text!.isValidPhonee() || self.emailTFOutlet.text!.isValidEmaiil() else {
+                    let alert = UIAlertController(title: "Error", message: "email OR phone are not valid, valid email OR phone", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                     return false
@@ -131,11 +133,20 @@ extension ViewController {
             .subscribe(onNext: { [weak self] (_) in
                 guard let self = self else { return }
                 print("buttonTapped")
-                //                let alert = UIAlertController(title: "success", message: "All fields are valid", preferredStyle: .alert)
-                //                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                //                self.present(alert, animated: true, completion: nil)
-                
                 self.loginViewModel.sendData()
+            }).disposed(by: disposeBag)
+        
+    }
+    
+    //MARK:- Back Button
+    func subscribeToBackButton() {
+        backButtonOutlet
+            .rx
+            .tap
+            .subscribe(onNext: { [weak self] (_) in
+                guard let self = self else { return }
+                print("buttonTapped")
+                self.dismiss(animated: true, completion: nil)
             }).disposed(by: disposeBag)
         
     }

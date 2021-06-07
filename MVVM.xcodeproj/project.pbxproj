@@ -46,6 +46,17 @@
 		E2476CF3263EB6FC006A847C /* WalletStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2476CF2263EB6FC006A847C /* WalletStoryBoard.storyboard */; };
 		E2476CFC263EB726006A847C /* WalletTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2476CFB263EB726006A847C /* WalletTableViewCell.swift */; };
 		E2476D07263EB90B006A847C /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2476D06263EB90B006A847C /* WalletViewController.swift */; };
+		E249C82D266E1E9700E0763E /* ColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C82C266E1E9700E0763E /* ColorExtentions.swift */; };
+		E249C836266E1FFA00E0763E /* Gif+image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C835266E1FFA00E0763E /* Gif+image.swift */; };
+		E249C83D266E208400E0763E /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C83C266E208400E0763E /* LoaderView.swift */; };
+		E249C843266E20DD00E0763E /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C842266E20DD00E0763E /* UITextField+Extension.swift */; };
+		E249C84C266E216A00E0763E /* CollectionAndTableEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C84B266E216A00E0763E /* CollectionAndTableEX.swift */; };
+		E249C855266E21CA00E0763E /* UIImagePickerControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C854266E21CA00E0763E /* UIImagePickerControllerExtension.swift */; };
+		E249C85E266E21F500E0763E /* DesignableTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C85D266E21F500E0763E /* DesignableTF.swift */; };
+		E249C867266E228700E0763E /* OpenLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C866266E228700E0763E /* OpenLinks.swift */; };
+		E249C870266E22BB00E0763E /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C86F266E22BB00E0763E /* CheckButton.swift */; };
+		E249C876266E22FA00E0763E /* UIViewController+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C875266E22FA00E0763E /* UIViewController+EX.swift */; };
+		E249C87F266E23FF00E0763E /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249C87E266E23FF00E0763E /* UIViewEx.swift */; };
 		E24DF341263D640A00E50834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DF340263D640A00E50834 /* AppDelegate.swift */; };
 		E24DF343263D640A00E50834 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DF342263D640A00E50834 /* SceneDelegate.swift */; };
 		E24DF345263D640A00E50834 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24DF344263D640A00E50834 /* ViewController.swift */; };
@@ -129,6 +140,17 @@
 		E2476CF2263EB6FC006A847C /* WalletStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalletStoryBoard.storyboard; sourceTree = "<group>"; };
 		E2476CFB263EB726006A847C /* WalletTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTableViewCell.swift; sourceTree = "<group>"; };
 		E2476D06263EB90B006A847C /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		E249C82C266E1E9700E0763E /* ColorExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtentions.swift; sourceTree = "<group>"; };
+		E249C835266E1FFA00E0763E /* Gif+image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gif+image.swift"; sourceTree = "<group>"; };
+		E249C83C266E208400E0763E /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		E249C842266E20DD00E0763E /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		E249C84B266E216A00E0763E /* CollectionAndTableEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAndTableEX.swift; sourceTree = "<group>"; };
+		E249C854266E21CA00E0763E /* UIImagePickerControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagePickerControllerExtension.swift; sourceTree = "<group>"; };
+		E249C85D266E21F500E0763E /* DesignableTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTF.swift; sourceTree = "<group>"; };
+		E249C866266E228700E0763E /* OpenLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenLinks.swift; sourceTree = "<group>"; };
+		E249C86F266E22BB00E0763E /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
+		E249C875266E22FA00E0763E /* UIViewController+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+EX.swift"; sourceTree = "<group>"; };
+		E249C87E266E23FF00E0763E /* UIViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
 		E24DF33D263D640A00E50834 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E24DF340263D640A00E50834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24DF342263D640A00E50834 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -483,6 +505,102 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		E249C82B266E1E8500E0763E /* Color EX */ = {
+			isa = PBXGroup;
+			children = (
+				E249C82C266E1E9700E0763E /* ColorExtentions.swift */,
+			);
+			path = "Color EX";
+			sourceTree = "<group>";
+		};
+		E249C834266E1FD000E0763E /* Gif+image */ = {
+			isa = PBXGroup;
+			children = (
+				E249C835266E1FFA00E0763E /* Gif+image.swift */,
+			);
+			path = "Gif+image";
+			sourceTree = "<group>";
+		};
+		E249C83A266E200C00E0763E /* Ex */ = {
+			isa = PBXGroup;
+			children = (
+				E24DF3D2263D832600E50834 /* EX.swift */,
+			);
+			path = Ex;
+			sourceTree = "<group>";
+		};
+		E249C83B266E206B00E0763E /* LoaderView */ = {
+			isa = PBXGroup;
+			children = (
+				E249C83C266E208400E0763E /* LoaderView.swift */,
+			);
+			path = LoaderView;
+			sourceTree = "<group>";
+		};
+		E249C841266E20CE00E0763E /* UITextField+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E249C842266E20DD00E0763E /* UITextField+Extension.swift */,
+			);
+			path = "UITextField+Extension";
+			sourceTree = "<group>";
+		};
+		E249C84A266E213300E0763E /* Collection and table EX */ = {
+			isa = PBXGroup;
+			children = (
+				E249C84B266E216A00E0763E /* CollectionAndTableEX.swift */,
+			);
+			path = "Collection and table EX";
+			sourceTree = "<group>";
+		};
+		E249C853266E21B500E0763E /* UIImagePickerController + Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E249C854266E21CA00E0763E /* UIImagePickerControllerExtension.swift */,
+			);
+			path = "UIImagePickerController + Extension";
+			sourceTree = "<group>";
+		};
+		E249C85C266E21E600E0763E /* DesignableTF */ = {
+			isa = PBXGroup;
+			children = (
+				E249C85D266E21F500E0763E /* DesignableTF.swift */,
+			);
+			path = DesignableTF;
+			sourceTree = "<group>";
+		};
+		E249C865266E227C00E0763E /* OpenLinks */ = {
+			isa = PBXGroup;
+			children = (
+				E249C866266E228700E0763E /* OpenLinks.swift */,
+			);
+			path = OpenLinks;
+			sourceTree = "<group>";
+		};
+		E249C86E266E22A100E0763E /* CheckButton */ = {
+			isa = PBXGroup;
+			children = (
+				E249C86F266E22BB00E0763E /* CheckButton.swift */,
+			);
+			path = CheckButton;
+			sourceTree = "<group>";
+		};
+		E249C874266E22E200E0763E /* UIViewController+EX */ = {
+			isa = PBXGroup;
+			children = (
+				E249C875266E22FA00E0763E /* UIViewController+EX.swift */,
+			);
+			path = "UIViewController+EX";
+			sourceTree = "<group>";
+		};
+		E249C87D266E23EC00E0763E /* UIViewEx */ = {
+			isa = PBXGroup;
+			children = (
+				E249C87E266E23FF00E0763E /* UIViewEx.swift */,
+			);
+			path = UIViewEx;
+			sourceTree = "<group>";
+		};
 		E24DF334263D640A00E50834 = {
 			isa = PBXGroup;
 			children = (
@@ -597,7 +715,18 @@
 		E24DF3D1263D831500E50834 /* EX */ = {
 			isa = PBXGroup;
 			children = (
-				E24DF3D2263D832600E50834 /* EX.swift */,
+				E249C87D266E23EC00E0763E /* UIViewEx */,
+				E249C83A266E200C00E0763E /* Ex */,
+				E249C874266E22E200E0763E /* UIViewController+EX */,
+				E249C834266E1FD000E0763E /* Gif+image */,
+				E249C82B266E1E8500E0763E /* Color EX */,
+				E249C83B266E206B00E0763E /* LoaderView */,
+				E249C841266E20CE00E0763E /* UITextField+Extension */,
+				E249C85C266E21E600E0763E /* DesignableTF */,
+				E249C84A266E213300E0763E /* Collection and table EX */,
+				E249C853266E21B500E0763E /* UIImagePickerController + Extension */,
+				E249C865266E227C00E0763E /* OpenLinks */,
+				E249C86E266E22A100E0763E /* CheckButton */,
 			);
 			path = EX;
 			sourceTree = "<group>";
@@ -883,11 +1012,13 @@
 				E24730B6266782ED00057592 /* DeleveryAddressAPI.swift in Sources */,
 				E24730F62667B76300057592 /* BindingAndSubscribingShowMenu.swift in Sources */,
 				E242CDD426414888009312D7 /* FavoriteViewModel.swift in Sources */,
+				E249C867266E228700E0763E /* OpenLinks.swift in Sources */,
 				E24DF345263D640A00E50834 /* ViewController.swift in Sources */,
 				E2476CD0263EB0B5006A847C /* WalletModel.swift in Sources */,
 				E24730AC2667817B00057592 /* DeliveryAddressVC.swift in Sources */,
 				E24730F12667AFEF00057592 /* AddNewAddressVC.swift in Sources */,
 				E24730E52667AC6600057592 /* BindingAndSubscribingAddress.swift in Sources */,
+				E249C876266E22FA00E0763E /* UIViewController+EX.swift in Sources */,
 				E25D7F5B26664BD100DAC671 /* ShowMenuViewModel.swift in Sources */,
 				E24DF3B5263D72E200E50834 /* LoginModel.swift in Sources */,
 				E2476CE0263EB301006A847C /* WalletMeta.swift in Sources */,
@@ -900,6 +1031,7 @@
 				E24DF3BA263D72FB00E50834 /* LoginFailureModel.swift in Sources */,
 				E24730A72667811400057592 /* AddressModel.swift in Sources */,
 				E245C418265D1E39004BCA41 /* PickerModel.swift in Sources */,
+				E249C870266E22BB00E0763E /* CheckButton.swift in Sources */,
 				E2476CED263EB3C9006A847C /* ModelError.swift in Sources */,
 				E24DF341263D640A00E50834 /* AppDelegate.swift in Sources */,
 				E245C3EF265CFA4F004BCA41 /* ProfileAPI.swift in Sources */,
@@ -907,22 +1039,30 @@
 				E245C436265D3A71004BCA41 /* BindingAndSubscribingProfile.swift in Sources */,
 				E2476CC6263EB077006A847C /* WalletLinks.swift in Sources */,
 				E24730B12667819600057592 /* DeliveryAddressViewModel.swift in Sources */,
+				E249C87F266E23FF00E0763E /* UIViewEx.swift in Sources */,
 				E245C3EA265CFA42004BCA41 /* ProfileViewModel.swift in Sources */,
+				E249C83D266E208400E0763E /* LoaderView.swift in Sources */,
+				E249C843266E20DD00E0763E /* UITextField+Extension.swift in Sources */,
 				E24DF3BF263D732A00E50834 /* User.swift in Sources */,
 				E24730CA266795CD00057592 /* DeleteAddressModel.swift in Sources */,
 				E24DF375263D69F400E50834 /* APISERVICE.swift in Sources */,
+				E249C855266E21CA00E0763E /* UIImagePickerControllerExtension.swift in Sources */,
 				E23C548E265A7B5700D64938 /* BindingAndSubscribingLogin.swift in Sources */,
 				E24730D82667965700057592 /* DeleteAddressAPI.swift in Sources */,
+				E249C85E266E21F500E0763E /* DesignableTF.swift in Sources */,
 				E2476CD8263EB0EE006A847C /* WalletViewModel.swift in Sources */,
 				E2476D07263EB90B006A847C /* WalletViewController.swift in Sources */,
 				E25D7F6326664BEE00DAC671 /* ShowMenuVC.swift in Sources */,
 				E25D452926565ABA0017F98E /* LoginAPI.swift in Sources */,
 				E2476CCB263EB092006A847C /* WalletData.swift in Sources */,
+				E249C84C266E216A00E0763E /* CollectionAndTableEX.swift in Sources */,
 				E24DF397263D6F4800E50834 /* LoginViewModel.swift in Sources */,
 				E24DF343263D640A00E50834 /* SceneDelegate.swift in Sources */,
 				E24730C12667885F00057592 /* DeliveryAddressCell.swift in Sources */,
 				E24730D02667961D00057592 /* DefultAddressModel.swift in Sources */,
 				E24730DD266796C900057592 /* SetDefultAddressAPI.swift in Sources */,
+				E249C836266E1FFA00E0763E /* Gif+image.swift in Sources */,
+				E249C82D266E1E9700E0763E /* ColorExtentions.swift in Sources */,
 				E242CDE626414CCB009312D7 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
